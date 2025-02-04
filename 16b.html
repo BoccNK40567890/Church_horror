@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h1 style="font-size: 1000%">△</h1>
+        <button style="font-size: 900%; background-color: black"><a href="dead6.html">□</a></button>
+        <button style="font-size: 900%; background-color: black"><a href="dead6.html">○</a></button>
+        <button style="font-size: 900%; background-color: black"><a onclick="randomRedirect()" id="myButton">△</a></button>
+        <script>
+        function randomRedirect() {
+            const pages = ['16c.html', '16d.html', '16e.html'];
+            const randomIndex = Math.floor(Math.random() * pages.length);
+            window.location.href = pages[randomIndex];
+        }
+    </script>
+    <script>
+        let timer;
+
+        document.getElementById("myButton").addEventListener("click", function() {
+            clearTimeout(timer);
+            window.location.href = "";
+        });
+
+        timer = setTimeout(function() {
+            window.location.href = "dead6.html";
+        }, 1000);
+    </script>
+    </body>
+</html>
