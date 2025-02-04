@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1 style="font-size: 500%">Can die</h1>
+        <h1 style="font-size: 2000%" id="myButton">😆</h1>
+
+    <script>
+        let timer;
+
+        document.getElementById("myButton").addEventListener("click", function() {
+            clearTimeout(timer);
+            window.location.href = "dead3.html";
+        });
+
+        timer = setTimeout(function() {
+            window.location.href = "16b.html";
+        }, 2000);
+    </script>
+    </body>
+</html>
