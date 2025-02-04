@@ -1,0 +1,52 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function randomRedirect() {
+            const pages = ['2.html', '3.html',  '5.html', '6.html', '7.html', '9.html', '10.html', '16.html'];
+            const randomIndex = Math.floor(Math.random() * pages.length);
+            window.location.href = pages[randomIndex];
+        }
+    </script>
+    <style>
+        .door {
+            display: block;
+            width: 160px;
+            height: 220px;
+            background-color: white;
+            margin: 10px;
+            cursor: pointer;
+        }
+     </style>    
+        <button onclick="randomRedirect()" style="background-color: green; font-size: 400%" class="door" id="myButton">Exit</button>
+        <script>
+        let timer;
+
+        document.getElementById("myButton").addEventListener("click", function() {
+            clearTimeout(timer);
+            window.location.href = "";
+        });
+
+        timer = setTimeout(function() {
+            window.location.href = "dead4.html";
+        }, 10000);
+    </script>
+</body>
+</html>
