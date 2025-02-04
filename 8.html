@@ -1,0 +1,22 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+        <h6 id="myButton"></h6>      
+
+    <script>
+        let timer;
+
+        document.getElementById("myButton").addEventListener("click", function() {
+            clearTimeout(timer);
+            window.location.href = "";
+        });
+
+        timer = setTimeout(function() {
+            window.location.href = "2.html";
+        }, 3000);
+    </script>
+</body>
+</html>
