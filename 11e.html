@@ -1,0 +1,45 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function randomRedirect() {
+            const pages = ['11c.html', '11d.html', '11b.html'];
+            const randomIndex = Math.floor(Math.random() * pages.length);
+            window.location.href = pages[randomIndex];
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <button onclick="randomRedirect()" id="myButton" style="font-size: 500%; background-color: #000000">👁️👁️Ruun</button>
+    </div>
+
+    <script>
+        let timer;
+
+        document.getElementById("myButton").addEventListener("click", function() {
+            clearTimeout(timer);
+            window.location.href = "4.html";
+        });
+
+        timer = setTimeout(function() {
+            window.location.href = "dead6.html";
+        }, 1000);
+    </script>
+</body>
+</html>
