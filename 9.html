@@ -1,0 +1,16 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        function randomRedirect() {
+            const pages = ['2.html', '3.html',  '5.html', '6.html', '7.html'];
+            const randomIndex = Math.floor(Math.random() * pages.length);
+            window.location.href = pages[randomIndex];
+        }
+    </script>    
+        <button onclick="randomRedirect()" style="font-size: 2000%" class="door">🚽</button>
+</body>
+</html>
