@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script>
+        function randomRedirect() {
+            const pages = ['2.html', '3.html', '4.html', '5.html', '6.html', '7.html', '9.html', '15.html', '12.html'];
+            const randomIndex = Math.floor(Math.random() * pages.length);
+            window.location.href = pages[randomIndex];
+        }
+    </script>
+    <style>
+        .door {
+            display: block;
+            width: 130px;
+            height: 220px;
+            background-color: brown;
+            margin: 10px;
+            cursor: pointer;
+        }
+     </style> 
+    </head>
+    <body style="background-color: brown">
+        <h1 style="font-size: 500%">🪟</h1>
+        <h1 style="font-size: 500%">🪟</h1>
+        <h1 style="font-size: 500%">🪟</h1>
+        <h1 style="font-size: 500%">🪟</h1>
+        <h1 style="font-size: 500%">🪟</h1>
+        <h1 style="font-size: 500%">🪟</h1>
+        <h1 style="font-size: 500%">🪟</h1>
+        <h1 style="font-size: 500%">🪟E</h1>
+        <h1 style="font-size: 500%">🪟X</h1>
+        <h1 style="font-size: 500%">🪟I</h1>
+        <h1 style="font-size: 500%">🪟T</h1>
+        <h1 style="font-size: 500%">🪟⬇️</h1>
+        <button onclick="randomRedirect()" style="background-color: #ff5e00; font-size: 400%" class="door" id="myButton">Door</button>
+        <script>
+        let timer;
+
+        document.getElementById("myButton").addEventListener("click", function() {
+            clearTimeout(timer);
+            window.location.href = "";
+        });
+
+        timer = setTimeout(function() {
+            window.location.href = "dead4.html";
+        }, 10000);
+    </script>
+    </body>
+</html>
