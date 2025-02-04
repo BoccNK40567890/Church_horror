@@ -1,0 +1,38 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="background-color: green">
+    <div>
+        <button id="myButton" style="font-size: 500%; background-color: #000000">Псст...</button>
+    </div>
+
+    <script>
+        let timer;
+
+        document.getElementById("myButton").addEventListener("click", function() {
+            clearTimeout(timer);
+            window.location.href = "dead3.html";
+        });
+
+        timer = setTimeout(function() {
+            window.location.href = "2.html";
+        }, 1000);
+    </script>
+</body>
+</html>
