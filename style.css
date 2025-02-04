@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s; /* плавное изменение цвета */
+}
+
+.red-background {
+  background-color: red;
+}
+
+#counter {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+#nameInput{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#saveButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+#saveButton:hover {
+    background-color: #367c39;
+}
+#saveButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
+}
+
+#resetButton {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+#resetButton:hover {
+    background-color: #d32f2f;
+}
+#resetButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(244, 67, 54, 0.5);
+}
+
+ .shop-container {
+       display: flex;
+      flex-direction: column;
+     align-items: center;
+    }
+
+
+  .shop-container button{
+        padding: 10px 20px;
+        background-color: #2196F3;
+        color: white;
+         margin-bottom: 10px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+.shop-container button:hover {
+    background-color: #1976D2;
+}
+.shop-container button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.5);
+}
+#message {
+      margin-top: 10px;
+      font-weight: bold;
+    }
