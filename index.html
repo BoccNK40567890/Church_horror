@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function randomRedirect() {
+            const pages = ['2.html', '4.html', '6.html', '9.html', '13.html'];
+            const randomIndex = Math.floor(Math.random() * pages.length);
+            window.location.href = pages[randomIndex];
+        }
+    </script>
+</head>
+<body>
+    <div id="red-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 0, 0, 0.7); z-index: 1000;"></div>
+    <h1>Мой счет:</h1>
+    <div id="counter">0</div>
+    <div id="message"></div>
+    <input type="text" id="nameInput" placeholder="Введите ваше имя">
+    <button id="saveButton">Сохранить</button>
+    <button id="resetButton">Новый игрок</button>
+    <input type="text" id="secretCodeInput" placeholder="Введите секретное слово">
+    <h2>Магазин</h2>
+    <div class="shop-container">
+        <button id="buyRedBackground" data-cost="100">Блокировка (100 очков)</button>
+        <button id="buyTitleChange" data-cost="200">Заголовок профи(200 очков)</button>
+    </div>
+
+    <script src="script.js"></script>
+    <h1>Press Play!!!</h1>
+    <button onclick="randomRedirect()" style="font-size: 1300%; background-color: #ff001f">Play</button>
+    <a href="info.html" style="font-size: 300%">info</a>
+    <button onclick="this.innerHTML++" style="font-size: 300%; background-color: black">100000000000</button>
+    <h5>0.2.0.0</h5>
+</body>
+</html>
