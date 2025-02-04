@@ -1,0 +1,32 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        function randomRedirect() {
+            const pages = ['2.html', '3.html', '4.html', 'l5.html', '7.html', '9.html'];
+            const randomIndex = Math.floor(Math.random() * pages.length);
+            window.location.href = pages[randomIndex];
+        }
+    </script>
+        <button onclick="randomRedirect()" style="font-size: 800%" id="myButton">🪦🪦</button>
+        <button onclick="randomRedirect()" style="font-size: 800%">🪦🪦</button>
+        <button onclick="randomRedirect()" style="font-size: 800%">🪦🪦</button>
+        <button style="font-size: 800%"><a href="dead5.html">🪦🗿</a></button>
+        <button onclick="randomRedirect()" style="font-size: 800%">🪦🪦</button>
+        <script>
+        let timer;
+
+        document.getElementById("myButton").addEventListener("click", function() {
+            clearTimeout(timer);
+            window.location.href = "";
+        });
+
+        timer = setTimeout(function() {
+            window.location.href = "dead4.html";
+        }, 10000);
+    </script>
+</body>
+</html>
